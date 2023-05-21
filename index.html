@@ -1,0 +1,780 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-CZB632MQ5K"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-CZB632MQ5K');
+</script>
+    
+    <title>WEBCREATION | We will manage your IT projects </title>
+    <link rel="icon" href="images/W.png" type="image/gif" sizes="16x16">
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <meta content="Kyros - Personal Website" name="description" />
+    <meta content="" name="keywords" />
+    <meta content="" name="author" />
+
+    <link rel="stylesheet" href="css1/owl.carousel.css" type="text/css">
+    <link rel="stylesheet" href="css1/magnific-popup.css" type="text/css">
+    <link rel="stylesheet" href="css1/main.css" type="text/css">
+    <script src="js1/modernizr.custom.js"></script>
+
+    <style>
+        .justify-text {
+            text-align: justify;
+        }
+    </style>
+
+    <!-- CSS Files
+    ================================================== -->
+    <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css" id="bootstrap" />
+    <link href="css/plugins.css" rel="stylesheet" type="text/css" />
+    <link href="css/style.css" rel="stylesheet" type="text/css" />
+    <style>
+        :root {
+            --primary-color: #1D57C4;
+            --primary-color-rgb: 217, 84, 53;
+        }
+    </style>
+    <link href="css/coloring.css" rel="stylesheet" type="text/css" data-color="#D95435" />
+    <script src="js/jquery.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $(".de_modal").click(function () {
+
+                var description = $(this).closest('.item').find('p').text();
+                $('#addText').text(description);
+
+                var projectName = $(this).closest('.item').find('img').attr('data-name');
+                $('#addName').text(projectName);
+
+                var tech = $(this).closest('.item').find('img').attr('data-tech');
+                $('.de_project-details .tech span').text(tech);
+
+                var tools = $(this).closest('.item').find('img').attr('data-tools');
+                $('.de_project-details .tools span').text(tools);
+
+                var preview = $(this).closest('.item').find('img').attr('data-preview');
+                $('.de_project-details .preview a').attr('href', preview);
+                if (preview == "") {
+                    $(".de_project-details .preview").css("display", "none");
+                    $(".de_project-details .github").css("display", "");
+                }
+
+                var github = $(this).closest('.item').find('img').attr('data-github');
+                $('.de_project-details .github a').attr('href', github);
+                if (github == "") {
+                    $(".de_project-details .github").css("display", "none");
+                    $(".de_project-details .preview").css("display", "");
+                }
+
+                if ((github == "") && (preview == "")) {
+                    $(".de_project-details .github").css("display", "none");
+                    $(".de_project-details .preview").css("display", "none");
+                }
+
+                var src = $(this).closest('.item').find('img').attr('data-path');
+                $('#de_modal-content img').attr('src', src);
+
+                var type = $(this).closest('.item').find('img').attr('data-type');
+                if (type == "5euros") {
+                    $(".de_project-info").css("display", "none");
+                } else {
+                    $(".de_project-info").css("display", "");
+                }
+
+                $('.filter').on('click', function() {
+                  var group = $(this).data('group');
+              
+                  if (group === 'category_all') {
+                    $('.item').show();
+                  } else {
+                    $('.item').hide();
+                    $('.item[data-groups*="' + group + '"]').show();
+                  }
+                  
+                  // Ajouter ou supprimer la classe "active" sur le filtre sélectionné
+                  $('.filter').removeClass('active');
+                  $(this).addClass('active');
+                });
+                
+
+            });
+        });
+    </script>
+</head>
+
+<body class="onepage">
+
+    
+    <div id="wrapper">
+        <header class="transparent header-light">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="de-flex sm-pt10">
+                            <div class="de-flex-col">
+                                <div class="de-flex-col">
+                                    <div id="logo">
+                                        <a href="#">
+                                            <img alt="" class="logo-2" src="images/new_logo1.png" />
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="de-flex-col header-col-right">
+                                <ul id="mainmenu">
+                                    <li><a class="active" href="#top">Accueil<span></span></a></li>
+                                    <!-- <li><a href="#section-about">About me<span></span></a></li> -->
+                                    <!-- <li><a href="#section-skills">Skills<span></span></a></li> -->
+                                    <li><a href="#section-services">Ce que nous faisons<span></span></a></li>
+                                    <!-- <li><a href="#section-resume">My Resume<span></span></a></li> -->
+                                    <!-- <li><a href="#section-fun-facts">My Experiences<span></span></a></li> -->
+                                    <li><a href="#section-portfolio">Portfolio<span></span></a></li>
+                                    <!-- <li><a href="#customers">Customers<span></span></a></li> -->
+                                    <li><a href="#customers">Témoignages<span></span></a></li>
+                                    <!-- <li><a href="#section-contact">Contact Me<span></span></a></li> -->
+                                </ul>
+                                <div class="menu_side_area">
+                                    <span id="menu-btn"></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <div class="no-bottom no-top" id="content">
+            <div id="top"></div>
+
+            <div class="float-text">
+                <div class="de_social-icons">
+                    <a href="https://wa.me/+33766502202"><i class="fa fa-whatsapp fa-lg"></i></a>
+                </div>
+                <span>Contactez-nous</span>
+            </div>
+
+            <div id="de_modal" style="background-size: cover;">
+                <button class="button-close"></button>
+                <div class="d-modal-loader" style="background-size: cover; display: block;">
+                    <div id="de_modal-content" class="container">
+                        <div class="row g-5">
+                            <div class="col-lg-8 ">
+                                <img src="images/1.png" alt="" class="img-fluid">
+                            </div>
+
+                            <div class="col-lg-4 de_project-info">
+                                <h3 id="addName">Description</h3>
+                                <p id="addText"></p>
+
+                                <div class="de_project-details">
+                                    <div class="d-field tech">
+                                        <i class="fa fa-user-o"></i>Technology: <span></span>
+                                    </div>
+                                    <div class="d-field tools">
+                                        <i class="fa fa-file-text-o"></i>Tools: <span></span>
+                                    </div>
+                                    <div class="d-field preview">
+                                        <i class="fa fa-external-link"></i>Preview: <span><a target="_blank" href="">Get to
+                                                see</a></span>
+                                    </div>
+                                    <div class="d-field github">
+                                        <i class="fa fa-calendar-o"></i>Depot Github: <span><a target="_blank" href="">Get to
+                                                see</a></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="modal" style="background-size: cover;">
+                <div id="modal-loader" style="background-size: cover; display: block;">
+                </div>
+            </div>
+
+            <section aria-label="section" class="jarallax no-top no-bottom">
+                <img src="images/test1.png" class="jarallax-img" alt="">
+
+                <div class="v-center">
+                    <div class="container mt-5">
+                        <div class="row align-items-center ">
+                            <div class="col-md-7">
+                                <h5 class="s1 wow fadeInUp" data-wow-delay=".4s">BIENVENUE SUR</h5>
+                                <div class="spacer-10"></div>
+                                <div class="h1 wow fadeInUp" data-wow-delay=".6s">
+                                    <span class="id-color-2">WEBSITE AGENCY</span> 
+                                    <!-- <br class="sm-hide"> -->
+                                    <!-- <div class="typed-strings">
+                                        <p>Freelancer.</p>
+                                        <p>Backend Developer.</p>
+                                        <p>Frontend Developer.</p>
+                                        <p>WordPress Developer</p>
+                                    </div> -->
+                                    <div class="typed"></div>
+                                </div>
+
+                                <div class="spacer-10"></div>
+                                <!-- <a href="CURRICULUM+VITAE_DEV.pdf" target="_blank" download class="btn-main wow fadeInUp">Download CV</a> -->
+                                <a class="btn-main wow fadeInUp" data-wow-delay=".6s" href="#section-services">Ce qu'on fais</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <a href="#section-about" class="mouse-icon-click scroll-to wow fadeInUp" data-wow-delay=".8s">
+                    <span class="mouse fadeScroll relative" data-scroll-speed="10">
+                        <span class="scroll"></span>
+                    </span>
+                </a>
+                <div class="de-gradient-edge-bottom"></div>
+            </section>
+
+            
+
+            <section id="section-services" class="no-bottom">
+                <div class="container relative">
+                    <div class="row">
+                        <div class="col-md-12 text-center wow fadeInUp">
+                            <h2>Ce que nous faisons</h2>
+                            <div class="space-border"></div>
+                        </div>
+                        <div class="spacer-single"></div>
+                        <div class="row g-0">
+                            <div class="col-lg-4 wow fadeIn" data-wow-delay=".2s">
+                                <div class="de_3d-box">
+                                    <div class="d-inner">
+                                        <i class="icon_genius id-color-2"></i>
+                                        <div class="text">
+                                            <h3>Application Web</h3>
+                                            Nous allons créer votre application web complète couplée à votre site web.
+                                            et adaptée à tous les formats d'écran (responsive) avec Laravel
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 wow fadeIn" data-wow-delay=".4s">
+                                <div class="de_3d-box">
+                                    <div class="d-inner">
+                                        <i class="icon_tools id-color-2"></i>
+                                        <div class="text">
+                                            <h3>Site WordPress </h3>
+                                            Nous construirons votre site web avec WordPress. Qu'il s'agisse d'un site de commerce électronique,
+                                            magasin, magazine ou blog, ou votre page d'atterrissage
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 wow fadeIn" data-wow-delay=".6s">
+                                <div class="de_3d-box">
+                                    <div class="d-inner">
+                                        <i class="icon_camera_alt id-color-2"></i>
+                                        <div class="text">
+                                          <h3>visibilité Accrue</h3>
+                                          Nous offrons des services personnalisés pour améliorer 
+                                          la visibilité de votre site web avec le 
+                                          référencement (SEO) et le marketing en ligne pour 
+                                          vous aider à atteindre un meilleur classement dans les moteurs 
+                                          de recherche pour plus de trafic.
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+           
+
+            <section id="section-portfolio" data-no-script class="no-bottom">
+                <div class="container relative">
+                    <div class="row">
+                        <div class="col-md-12 text-center wow fadeInUp">
+                            <h2>Portfolio</h2>
+                            <div class="space-border"></div>
+                        </div>
+                    </div>
+                     <div id="gallery" class="row sequence">
+
+                    <div class="row">
+                        <div class=" col-xs-12 col-sm-12 ">
+                          <div id="portfolio_content_q" class="portfolio-content">
+                              
+                              <ul class="portfolio-filters wow fadeInLeft">
+                                  <li class="active">
+                                  <a class="filter btn btn-sm btn-link" data-group="category_all">Tout</a>
+                                  </li>
+                                  
+                                  <li>
+                                  <a class="filter btn btn-sm btn-link" data-group="category_e-commerce">Site E-commerce </a>
+                                  </li>
+                                  
+                                  <li>
+                                  <a class="filter btn btn-sm btn-link" data-group="category_marketplace">Marketplace</a>
+                                  </li>
+                                  
+                                  <li>
+                                  <a class="filter btn btn-sm btn-link" data-group="category_web_application">Application Web</a>
+                                  </li>
+                                  
+                                  <li>
+                                  <a class="filter btn btn-sm btn-link" data-group="category_showcase">Sites Vitrines</a>
+                                  </li>
+
+                                  <li>
+                                  <a class="filter btn btn-sm btn-link" data-group="category_blog">Blog</a>
+                                  </li>
+                                  
+                                  <li>
+                                  <a class="filter btn btn-sm btn-link" data-group="category_landing_page">Landing Page</a>
+                                  </li>
+
+                                  <li>
+                                      <a class="filter btn btn-sm btn-link" data-group="category_web_project">Projet Web</a>
+                                  </li>
+                                  
+                              </ul>
+            
+                            <div class="portfolio-grid three-columns shuffle wow fadeInRight">
+      
+                              <figure id="benin_tourism" class="item standard" data-groups='["category_all", "category_marketplace"]'>
+                                <div class="portfolio-item-img">
+                                  <img src="images/benintourism.png" alt="Full Project 2" title="" />
+                                  <a href="project/benin_tourism.html" class="ajax-page-load"></a>
+                                </div>
+      
+                                <i class="far fa-file-alt"></i>
+                                <h4 class="name" style="color: white !important; background: blue !important;">BENIN TOURISM</h4>
+                                <span class="category">Marketplace</span>
+                              </figure>
+
+                              <figure id="benin_tourism" class="item standard" data-groups='["category_all", "category_web_application"]'>
+                                <div class="portfolio-item-img">
+                                  <img src="images/amnesty.png" alt="Full Project 2" title="" />
+                                  <a href="project/amnesty.html" class="ajax-page-load"></a>
+                                </div>
+      
+                                <i class="far fa-file-alt"></i>
+                                <h4 class="name" style="color: white !important; background: blue !important;">HUMAN's RIGHTS</h4>
+                                <span class="category">Application Web</span>
+                              </figure>
+      
+                              <figure id="eatcoin" class="item standard" data-groups='["category_all", "category_web_application"]'>
+                                <div class="portfolio-item-img">
+                                  <img src="images/eatcoin.png" alt="Full Project 2" title="" />
+                                  <a href="project/eatcoin.html" class="ajax-page-load"></a>
+                                </div>
+      
+                                <i class="far fa-file-alt"></i>
+                                <h4 class="name" style="color: white !important; background: blue !important;">EATCOIN</h4>
+                                <span class="category">Application Web</span>
+                              </figure>
+
+                              <figure id="eatcoin" class="item standard" data-groups='["category_all", "category_e-commerce"]'>
+                                <div class="portfolio-item-img">
+                                  <img src="images/bossalini1.png" alt="Full Project 2" title="" />
+                                  <a href="project/bossalini.html" class="ajax-page-load"></a>
+                                </div> 
+      
+                                <i class="far fa-file-alt"></i>
+                                <h4 class="name" style="color: white !important; background: blue !important;">BOSSALINI</h4>
+                                <span class="category">Application Web</span>
+                              </figure>
+      
+                              <figure id="karibe" class="item standard" data-groups='["category_all", "category_e-commerce"]'>
+                                <div class="portfolio-item-img">
+                                  <img src="images/karibe.png" alt="Full Project 2" title="" />
+                                  <a href="project/karibe.html" class="ajax-page-load"></a>
+                                </div>
+      
+                                <i class="far fa-file-alt"></i>
+                                <h4 class="name" style="color: white !important; background: blue !important;">KARIBE</h4>
+                                <span class="category">E-commerce</span>
+                              </figure>
+      
+                              <figure id="aziza" class="item standard" data-groups='["category_all", "category_e-commerce"]'>
+                                <div class="portfolio-item-img">
+                                  <img src="images/aziza.png" alt="Full Project 2" title="" />
+                                  <a href="project/aziza.html" class="ajax-page-load"></a>
+                                </div>
+      
+                                <i class="far fa-file-alt"></i>
+                                <h4 class="name" style="color: white !important; background: blue !important;">AZIZA</h4>
+                                <span class="category">E-commerce</span>
+                              </figure>
+
+                              <figure id="printbar" class="item standard" data-groups='["category_all", "category_web_application"]'>
+                                <div class="portfolio-item-img">
+                                  <img src="images/scan2.png" alt="Full Project 2" title="" />
+                                  <a href="project/printbar.html" class="ajax-page-load"></a>
+                                </div>
+      
+                                <i class="far fa-file-alt"></i>
+                                <h4 class="name" style="color: white !important; background: blue !important;">PRINTBAR</h4>
+                                <span class="category">Application Web</span>
+                              </figure>
+      
+                              <figure id="mtavrx" class="item standard" data-groups='["category_all", "category_blog"]'>
+                                <div class="portfolio-item-img">
+                                  <img src="images/mtavrx.png" alt="Full Project 2" title="" />
+                                  <a href="project/mtavrx.html" class="ajax-page-load"></a>
+                                </div>
+      
+                                <i class="far fa-file-alt"></i>
+                                <h4 class="name" style="color: white !important; background: blue !important;">MTAVRX</h4>
+                                <span class="category">Blog</span>
+                              </figure>
+                     
+                              <figure id="bluesquare" class="item standard" data-groups='["category_all", "category_showcase"]'>
+                                <div class="portfolio-item-img">
+                                  <img src="images/bluesquare.png" alt="Full Project 2" title="" />
+                                  <a href="project/bluesquare.html" class="ajax-page-load"></a>
+                                </div>
+      
+                                <i class="far fa-file-alt"></i>
+                                <h4 class="name" style="color: white !important; background: blue !important;">BLUESQUARE</h4>
+                                <span class="category">Site Vitrine</span>
+                              </figure>
+                              
+                              <figure id="gkel" class="item standard" data-groups='["category_all", "category_showcase"]'>
+                                <div class="portfolio-item-img">
+                                  <img src="images/gkel.png" alt="Full Project 2" title="" />
+                                  <a href="project/gkel.html" class="ajax-page-load"></a>
+                                </div>
+      
+                                <i class="far fa-file-alt"></i>
+                                <h4 class="name" style="color: white !important; background: blue !important;">GKEL Consulting</h4>
+                                <span class="category">Site Vitrine</span>
+                              </figure>
+      
+                              <figure id="rental" class="item standard" data-groups='["category_all", "category_web_application"]'>
+                                <div class="portfolio-item-img">
+                                  <img src="images/scan7.png" alt="Full Project 2" title="" />
+                                  <a href="project/rental.html" class="ajax-page-load"></a>
+                                </div>
+      
+                                <i class="far fa-file-alt"></i>
+                                <h4 class="name" style="color: white !important; background: blue !important;">Rental Management</h4>
+                                <span class="category">Application Web</span>
+                              </figure>
+      
+                              <figure id="ixioxi" class="item standard" data-groups='["category_all", "category_web_application"]'>
+                                <div class="portfolio-item-img">
+                                  <img src="images/scan8.png" alt="Full Project 2" title="" />
+                                  <a href="project/ixioxi.html" class="ajax-page-load"></a>
+                                </div>
+      
+                                <i class="far fa-file-alt"></i>
+                                <h4 class="name" style="color: white !important; background: blue !important;">IXIOXI</h4>
+                                <span class="category">Application Web</span>
+                              </figure>
+      
+                              <figure id="repetiteurs" class="item standard" data-groups='["category_all", "category_marketplace"]'>
+                                <div class="portfolio-item-img">
+                                  <img src="images/scan3.png" alt="Full Project 2" title="" />
+                                  <a href="project/repetiteurs.html" class="ajax-page-load"></a>
+                                </div>
+      
+                                <i class="far fa-file-alt"></i>
+                                <h4 class="name" style="color: white !important; background: blue !important;">Répétiteurs du Net</h4>
+                                <span class="category">Marketplace</span>
+                              </figure>
+      
+                              <figure id="wazemi" class="item standard" data-groups='["category_all", "category_web_application"]'>
+                                <div class="portfolio-item-img">
+                                  <img src="images/scan7.png" alt="Full Project 2" title="" />
+                                  <a href="project/wazemi.html" class="ajax-page-load"></a>
+                                </div>
+      
+                                <i class="far fa-file-alt"></i>
+                                <h4 class="name" style="color: white !important; background: blue !important;">WAZEMI</h4>
+                                <span class="category">Application Web</span>
+                              </figure>
+
+                              <figure id="ong" class="item standard" data-groups='["category_all", "category_landing_page"]'>
+                                <div class="portfolio-item-img">
+                                  <img src="images/ong.png" alt="Full Project 2" title="" />
+                                  <a href="project/ong.html" class="ajax-page-load"></a>
+                                </div>
+      
+                                <i class="far fa-file-alt"></i>
+                                <h4 class="name" style="color: white !important; background: blue !important;">SYSTEM IO</h4>
+                                <span class="category">Landing Page</span>
+                              </figure>
+
+                              <figure id="bnt" class="item standard" data-groups='["category_all", "category_web_application"]'>
+                                  <div class="portfolio-item-img">
+                                    <img src="images/scan1.png" alt="Full Project 2" title="" />
+                                    <a href="project/bnt.html" class="ajax-page-load"></a>
+                                  </div>
+        
+                                  <i class="far fa-file-alt"></i>
+                                  <h4 class="name" style="color: white !important; background: blue !important;">BNT ACADEMY</h4>
+                                  <span class="category">Wep Application</span>
+                                </figure>
+
+                                <figure id="libourne" class="item standard" data-groups='["category_all", "category_showcase"]'>
+                                  <div class="portfolio-item-img">
+                                    <img src="images/scan5.png" alt="Full Project 2" title="" />
+                                    <a href="project/libourne.html" class="ajax-page-load"></a>
+                                  </div>
+        
+                                  <i class="far fa-file-alt"></i>
+                                  <h4 class="name" style="color: white !important; background: blue !important;">SITES DES BONS PLANS</h4>
+                                  <span class="category">Site Vitrine</span>
+                                </figure>
+
+                                <figure id="kaliza" class="item standard" data-groups='["category_all", "category_landing_page"]'>
+                                  <div class="portfolio-item-img">
+                                    <img src="images/scan4.png" alt="Full Project 2" title="" />
+                                    <a href="project/kaliza.html" class="ajax-page-load"></a>
+                                  </div>
+        
+                                  <i class="far fa-file-alt"></i>
+                                  <h4 class="name" style="color: white !important; background: blue !important;">KALIZA</h4>
+                                  <span class="category">Landing Page</span>
+                                </figure>
+
+                                <figure id="html_wordpress" class="item standard" data-groups='["category_all", "category_web_project"]'>
+                                    <div class="portfolio-item-img">
+                                      <img src="images/scan7.png" alt="Full Project 2" title="" />
+                                      <a href="project/html_wordpress.html" class="ajax-page-load"></a>
+                                    </div>
+          
+                                    <i class="far fa-file-alt"></i>
+                                    <h4 class="name" style="color: white !important; background: blue !important;">HTML TO WORDPRESS</h4>
+                                    <span class="category">Web Porject</span>
+                                  </figure>
+
+                                <figure id="hydro" class="item standard" data-groups='["category_all", "category_landing_page"]'>
+                                  <div class="portfolio-item-img">
+                                    <img src="images/hydro.png" alt="Full Project 2" title="" />
+                                    <a href="project/hydro.html" class="ajax-page-load"></a>
+                                  </div>
+        
+                                  <i class="far fa-file-alt"></i>
+                                  <h4 class="name" style="color: white !important; background: blue !important;">HCORI</h4>
+                                  <span class="category">Landing Page</span>
+                                </figure>
+
+
+                                <figure id="eden" class="item standard" data-groups='["category_all", "category_portfolio"]'>
+                                    <div class="portfolio-item-img">
+                                      <img src="images/eden-1.png" alt="Full Project 2" title="" />
+                                      <a href="project/eden.html" class="ajax-page-load"></a>
+                                    </div>
+          
+                                    <i class="far fa-file-alt"></i>
+                                    <h4 class="name" style="color: white !important; background: blue !important;">EDEN</h4>
+                                    <span class="category">Portfolio</span>
+                                </figure>
+
+                                <figure id="julien" class="item standard" data-groups='["category_all", "category_portfolio"]'>
+                                    <div class="portfolio-item-img">
+                                        <img src="images/julien-1.png" alt="Full Project 2" title="" />
+                                        <a href="project/julien.html" class="ajax-page-load"></a>
+                                    </div>
+            
+                                    <i class="far fa-file-alt"></i>
+                                    <h4 class="name" style="color: white !important; background: blue !important;">JULIEN</h4>
+                                    <span class="category">Portfolio</span>
+                                </figure>
+
+                                <figure id="smartcontact" class="item standard" data-groups='["category_all", "category_web_application"]'>
+                                    <div class="portfolio-item-img">
+                                        <img src="images/smart_contact-1.png" alt="Full Project 2" title="" />
+                                        <a href="project/smart_contact.html" class="ajax-page-load"></a>
+                                    </div>
+            
+                                    <i class="far fa-file-alt"></i>
+                                    <h4 class="name" style="color: white !important; background: blue !important;">SMART CONTACT</h4>
+                                    <span class="category">Application Web</span>
+                                </figure>
+                            </div>
+
+                          </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="customers">
+                <div id="page_container" class="container">
+                    <div id="main" class="site-main">
+                      <div id="main-content" class="single-page-content">
+                        <div id="primary" class="content-area">
+                          <div  class="page-content site-content single-post" role="main">
+                            <div class="row">
+                              <div class="col-xs-12 col-sm-12">
+                                <div class="p-20"></div>
+              
+                                <div  class="col-md-12 text-center wow fadeInUp">
+                                    <h2>Témoignages</h2>
+                                    <div class="space-border"></div>
+                                </div>
+              
+                                <div id="testimonials_1" class="testimonials owl-carousel" data-mobile-items="1" data-tablet-items="2"
+                                  data-items="2">
+                                  <div class="testimonial-item wow fadeInDown">
+                                    <div class="testimonial-content">
+                                      <div class="testimonial-picture">
+                                        <img src="./img/clients/aziza.png" alt="Billy Adams" />
+                                      </div>
+              
+                                      <div class="testimonial-text">
+                                        <p>En tant que perfectionniste, j'ai du mal à trouver des personnes qui répondent vraiment à mes attentes.
+                                          mes attentes... mais Julian dépasse tout ce que l'on peut imaginer en termes de
+                                          compétences. Sa disponibilité et sa réactivité font de lui un professionnel. Je le recommande
+                                          à 200%.</p>
+                                      </div>
+
+                                      <div class="testimonial-author-info">
+                                        <h5 class="testimonial-author">Thierry</h5>
+                                        <p class="testimonial-firm">BLUESQUARE</p>
+                                      </div>
+              
+                                      <div class="testimonial-icon">
+                                        <i class="fa fa-quote-left"></i>
+                                      </div>
+              
+                                      <div class="testimonial-icon-big">
+                                        <i class="fa fa-quote-right"></i>
+                                      </div>
+                                    </div>
+                                  </div>
+              
+                                  <div class="testimonial-item wow fadeInDown">
+                                    <div class="testimonial-content">
+                                      <div class="testimonial-picture">
+                                        <img src="./img/clients/mtavrx.png" alt="Gary Johnson" />
+                                      </div>
+              
+                                      <div class="testimonial-text">
+                                        <p>Pour la première fois, je suis vraiment surprise et très heureuse de cette nouvelle aventure qui s'ouvre et s'offre à moi grâce à Julian.
+                                          qui s'ouvre et s'offre à moi grâce à Julian ! Qui a réalisé ma demande et qui est très patient et à l'écoute !
+                                          et m'a écouté ! Je recommande la rapidité d'exécution ! A bientôt pour le prochain projet ! Et merci à
+                                          l'équipe.</p>
+                                      </div>
+              
+                                      <div class="testimonial-author-info">
+                                        <h5 class="testimonial-author">Géraud YESSIN</h5>
+                                        <p class="testimonial-firm">HORIZON PLUS</p>
+                                      </div>
+              
+                                      <div class="testimonial-icon">
+                                        <i class="fa fa-quote-left"></i>
+                                      </div>
+              
+                                      <div class="testimonial-icon-big">
+                                        <i class="fa fa-quote-right"></i>
+                                      </div>
+                                    </div>
+                                  </div>
+              
+                                  <div class="testimonial-item wow fadeInDown">
+              
+                                    <div class="testimonial-content">
+                                      <div class="testimonial-picture">
+                                        <img src="./img/clients/ixioxi.png" alt="Daniel Pringle" />
+                                      </div>
+              
+                                      <div class="testimonial-text">
+                                        <p>A la recherche d'un professionnel, je recommande Julian sans hésitation à 100% pour tout projet
+                                          nécessitant un haut niveau d'expertise. Sa disponibilité est constante, et sa capacité à résoudre
+                                          à résoudre rapidement les problèmes font de lui un véritable atout pour toute équipe.</p>
+                                      </div>
+              
+                                      <div class="testimonial-author-info">
+                                        <h5 class="testimonial-author">Alexis DJISSOU</h5>
+                                        <p class="testimonial-firm">JCI Cotonou</p>
+                                      </div>
+              
+                                      <div class="testimonial-icon">
+                                        <i class="fa fa-quote-left"></i>
+                                      </div>
+              
+                                      <div class="testimonial-icon-big">
+                                        <i class="fa fa-quote-right"></i>
+                                      </div>
+                                    </div>
+              
+                                  </div>
+                                </div>
+              
+                                <div class="p-40"></div>
+              
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                </div>
+            </section>
+
+        </div>
+        <a href="#" id="back-to-top"></a>
+
+        <footer>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6">
+                        <a href="index.html">
+                            <span class="copy">&copy; Copyright 2023</span>
+                        </a>
+                    </div>
+                    <div class="col-md-3"></div>
+                    <div class="col-md-3">
+                        <div class="social-icons">
+                            <a target="_blank" href="https://wa.me/+33766502202"><i class="fa fa-whatsapp fa-lg"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+
+    <script src="js1/jquery-3.5.1.min.js"></script>
+    <script src="js1/imagesloaded.pkgd.min.js"></script>
+    <script src="js1/bootstrap.min.js"></script>
+    <script src='js1/owl.carousel.min.js'></script>
+    <script src="js1/main.js"></script>
+    <script src="js1/jquery.magnific-popup.min.js"></script>
+    <script src='js1/jquery.shuffle.min.js'></script>
+
+
+    <script src="js/plugins.js"></script>
+    <script src="js/designesia.js"></script>
+    <!-- <script src='https://www.google.com/recaptcha/api.js' async defer></script> -->
+    <script>
+        jQuery(document).ready(function () {
+            $(function () {
+                // jquery typed plugin
+                $(".typed").typed({
+                    stringsElement: $('.typed-strings'),
+                    typeSpeed: 100,
+                    backDelay: 500,
+                    loop: true,
+                    contentType: 'html', // or text
+                    // defaults to false for infinite loop
+                    loopCount: false,
+                    callback: function () { null; },
+                    resetCallback: function () { newTyped(); }
+                });
+            });
+        });
+    </script>
+
+</body>
+
+</html>
+
